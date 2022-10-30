@@ -7,7 +7,7 @@
 
 body {
   align-items: center;
-  background-color: #8e0dae;
+  background-image: linear-gradient(to top right, #0dabae, #700dae);
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -70,7 +70,7 @@ body {
 }
 
 .form .title::before {
-  background-color: #8e0dae;
+  background-color: #700dae;
   border-radius: 25px;
   content: '';
   position: absolute;
@@ -101,7 +101,7 @@ body {
 }
 
 .input-field input:is(:focus, :valid) {
-  border-bottom-color: #8e0dae;
+  border-bottom-color: #700dae;
 }
 
 .input-field i {
@@ -114,7 +114,7 @@ body {
 }
 
 .input-field input:is(:focus, :valid) ~ i {
-  color: #8e0dae;
+  color: #700dae;
 }
 
 .input-field i.icon {
@@ -143,7 +143,7 @@ body {
 }
 
 .checkbox-content input {
-  accent-color: #8e0dae;
+  accent-color: #700dae;
   margin: 0 8px -2px 4px;
 }
 
@@ -153,7 +153,7 @@ body {
 }
 
 .form a.text {
-  color: #8e0dae;
+  color: #700dae;
   text-decoration: none;
 }
 
@@ -166,7 +166,7 @@ body {
 }
 
 .form .button input {
-  background-color: #8e0dae;
+  background-color: #700dae;
   border: none;
   border-radius: 6px;
   color: #ffffff;
