@@ -1,0 +1,18 @@
+{
+  "name": "buggify",
+  "version": "1.0.0",
+  "description": "Incident Tracker",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "John Aries Saique",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "core-js": "^3.26.0"
+  }
+}
