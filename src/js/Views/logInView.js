@@ -10,18 +10,16 @@ class LoginView {
 
   toggleEye() {
     this._showPw.forEach(icon => {
-      icon.classList.toggle('fa-eye-slash');
+      const classEye =
+        icon.getAttribute('class') === 'fa-solid fa-eye show-hide-pw'
+          ? 'fa-solid fa-eye-slash show-hide-pw'
+          : 'fa-solid fa-eye show-hide-pw';
+      icon.setAttribute('class', classEye);
     });
   }
 
   password() {
     this._pwFields.forEach(pwField => {
-      // if (pwField.type === 'password') {
-      //   pwField.type = 'text';
-      // } else {
-      //   pwField.type = 'password';
-      // }
-
       const type =
         pwField.getAttribute('type') === 'password' ? 'text' : 'password';
       pwField.setAttribute('type', type);
@@ -31,6 +29,7 @@ class LoginView {
   showPassword() {
     this._showPw.forEach(eyeIcon => {
       eyeIcon.addEventListener('click', this.password.bind(this));
+      eyeIcon.addEventListener('click', this.toggleEye.bind(this));
     });
   }
 }
