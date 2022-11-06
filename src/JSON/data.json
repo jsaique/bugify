@@ -1,0 +1,52 @@
+{
+  "data": {
+    "users": [
+      {
+        "owner": "John Saique",
+        "username": "jass",
+        "password": 1111,
+        "tickets": [
+          {
+            "ticket_number": 1,
+            "issue": "Unable to login",
+            "description": "im getting an error message unable to login",
+            "comments": ["testing", "testing"]
+          }
+        ]
+      },
+
+      {
+        "owner": "Test User",
+        "username": "test",
+        "password": 2222,
+        "tickets": [
+          {
+            "ticket_number": 2,
+            "issue": "Unable to login",
+            "description": "Im getting an error message unable to login",
+            "comments": ["testing"]
+          },
+
+          {
+            "ticket_number": 3,
+            "issue": "Laptop issue",
+            "description": "Im getting an error message unable to login",
+            "comments": ["testing"]
+          }
+        ]
+      },
+
+      {
+        "owner": "Admin demo",
+        "username": "admin",
+        "password": null
+      },
+
+      {
+        "owner": "User demo",
+        "username": "user",
+        "password": null
+      }
+    ]
+  }
+}

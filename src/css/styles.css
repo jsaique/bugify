@@ -6,18 +6,71 @@
 }
 
 body {
-  align-items: center;
   background-image: linear-gradient(to top right, #0dabae, #700dae);
-  display: flex;
-  justify-content: center;
   height: 100vh;
+}
+
+.box {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 
 /* .hidden {
   display: none;
 } */
 
-/* Login */
+/* nav */
+
+.nav {
+  /* background-color: red; */
+  display: flex;
+  font-size: 25px;
+  height: 3.5rem;
+  justify-content: space-between;
+  position: relative;
+  /* bottom: 500px; */
+  width: 100%;
+  z-index: 100%;
+}
+
+.title::before {
+  background-color: #700dae;
+  border-radius: 25px;
+  content: '';
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  height: 3px;
+  width: 30px;
+}
+
+/* Ticket */
+
+.ticket-container {
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem #1f1f1f;
+  overflow: hidden;
+  max-width: 430px;
+  width: 100%;
+}
+
+.logo {
+  top: 13px;
+  left: 20px;
+  position: relative;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  .logo {
+    position: fixed;
+  }
+} */
+
+/* Login and registration */
 
 .container {
   background-color: #ffffff;

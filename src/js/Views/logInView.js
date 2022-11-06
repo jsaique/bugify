@@ -1,8 +1,12 @@
 class LoginView {
-  // _parentElement = document.querySelector('.container');
   _showPw = document.querySelectorAll('.fa-eye');
-  // _hidePw = document.querySelectorAll('.fa-eye-slash');
-  _pwFields = document.querySelectorAll('.password');
+  _pwEye = document.querySelectorAll('.input-eye');
+  _pwField = document.querySelector('.input-password');
+  _unField = document.querySelector('.input-login');
+
+  _btnLogin = document.querySelector('.btn-login');
+  _btnAdmin = document.querySelector('.btn-admin-demo');
+  _btnUser = document.querySelector('.btn-user-demo');
 
   constructor() {
     this.showPassword();
@@ -19,7 +23,7 @@ class LoginView {
   }
 
   password() {
-    this._pwFields.forEach(pwField => {
+    this._pwEye.forEach(pwField => {
       const type =
         pwField.getAttribute('type') === 'password' ? 'text' : 'password';
       pwField.setAttribute('type', type);
@@ -27,10 +31,21 @@ class LoginView {
   }
 
   showPassword() {
-    this._showPw.forEach(eyeIcon => {
-      eyeIcon.addEventListener('click', this.password.bind(this));
-      eyeIcon.addEventListener('click', this.toggleEye.bind(this));
+    this._showPw.forEach(icon => {
+      icon.addEventListener('click', this.password.bind(this));
+      icon.addEventListener('click', this.toggleEye.bind(this));
     });
+  }
+
+  _addHandlerLogin(handler) {
+    this._btnLogin.addEventListener('click', handler);
+  }
+
+  _addHandlerAdmin(handler) {
+    this._btnAdmin.addEventListener('click', handler);
+  }
+  _addHandlerUser(handler) {
+    this._btnUser.addEventListener('click', handler);
   }
 }
 export default new LoginView();
