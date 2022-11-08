@@ -2,9 +2,9 @@ import * as model from './model.js';
 import logInView from './views/logInView.js';
 // import registrationView from './views/registrationView.js';
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
+if (module.hot) {
+  module.hot.accept();
+}
 
 let currentAccount;
 
@@ -39,11 +39,12 @@ const controlLogin = function (e) {
 const controlAdmin = function (e) {
   e.preventDefault();
   console.log('Admin');
-  // window.location = '../../homepage.html';
+  window.location.href = '../../pages/homepage.html';
 };
 
 const controlUser = function () {
   console.log('User');
+  window.location.href = '../../pages/homepage.html';
 };
 const init = function () {
   // createUserNames(model.users);

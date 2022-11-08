@@ -38,13 +38,16 @@ class LoginView {
   }
 
   _addHandlerLogin(handler) {
-    this._btnLogin.addEventListener('click', handler);
+    if (!this._btnLogin) return;
+    this._btnLogin?.addEventListener('click', handler);
   }
 
   _addHandlerAdmin(handler) {
+    if (!this._btnAdmin) return;
     this._btnAdmin.addEventListener('click', handler);
   }
   _addHandlerUser(handler) {
+    if (!this._btnUser) return;
     this._btnUser.addEventListener('click', handler);
   }
 }

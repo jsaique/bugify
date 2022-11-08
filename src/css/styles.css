@@ -24,7 +24,7 @@ body {
 /* nav */
 
 .nav {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   font-size: 25px;
   height: 3.5rem;
