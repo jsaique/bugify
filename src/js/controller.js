@@ -10,7 +10,6 @@ let currentAccount;
 
 const controlLogin = function (e) {
   e.preventDefault();
-  console.log('Clicked');
   currentAccount = model.users.find(
     user => user.username === logInView._unField.value
   );
@@ -22,7 +21,7 @@ const controlLogin = function (e) {
   // }
 
   currentAccount?.password === +logInView._pwField.value
-    ? console.log('logged in')
+    ? (window.location.href = '../../pages/homepage.html')
     : alert('Wrong password');
 };
 

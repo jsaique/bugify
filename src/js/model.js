@@ -6,7 +6,7 @@ const state = {
   users: {},
 };
 
-console.log(API_URL);
+// console.log(API_URL);
 const data = API_URL;
 
 export const { users } = data.data;
@@ -16,4 +16,4 @@ state.users = {
   password: users.password,
   tickets: users.tickets,
 };
-console.log(users);
+// console.log(users);
