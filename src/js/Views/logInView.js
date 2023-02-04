@@ -39,7 +39,7 @@ class LoginView {
 
   _addHandlerLogin(handler) {
     if (!this._btnLogin) return;
-    this._btnLogin?.addEventListener('click', handler);
+    this._btnLogin.addEventListener('click', handler);
   }
 
   _addHandlerAdmin(handler) {

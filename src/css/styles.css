@@ -32,7 +32,7 @@ body {
   position: relative;
   /* bottom: 500px; */
   width: 100%;
-  z-index: 100%;
+  /* z-index: 100%; */
 }
 
 .title::before {
@@ -44,6 +44,11 @@ body {
   bottom: 20px;
   height: 3px;
   width: 30px;
+}
+
+/* Welcome container */
+.welcome-container {
+  background-color: red;
 }
 
 /* Ticket */
